@@ -25,8 +25,6 @@ The optimal parameters found using the grid search were max_df of 0.5, max_featu
 ## Results
 
 ## Conclusion
-Some lower end cameras seem to be just as good if not better than the higher end models. In order to generalize this to the overall population of cameras, we’d need more data for expensive cameras. It would also be interesting to see how cameras have changed since 2007.
 
 ## Acknowledgements
 
-https://www.kaggle.com/crawford/1000-cameras-dataset
