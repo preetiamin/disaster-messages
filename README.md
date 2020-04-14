@@ -16,7 +16,7 @@ The project was completed as part of Udacity's Data Scientist nanodegree program
 
 * Grid Search - Grid Search was used to optimize the model. Four paramters were optimized using the grid search:
 - Count Vectorizer ngram_range: Values of (1,1) and (1,2) were used, ngram_range of (1, 1) means only unigrams, (1, 2) means unigrams and bigrams were used in the data; default is (1,1) which means only unigrams are used.
-- Count Vectorizer max_df: Values of 0.5 and 1.0 were used, words with frequency higher than max_df are ignored when building the vocabulary; default is 1.0, which means nothing is ignored.
+- Count Vectorizer max_df: Values of 0.5 and 1.0 were used, words that appear in more than max_df proportion of documents are ignored when building the vocabulary; default is 1.0, which means nothing is ignored.
 - Count Vectorizer max_features: Values of None and 10,000 were used, when building a vocabulary, the max features are bounded by this argument; default is None, which mean all features are used.
 - TF-IDF Transformer use_idf: Values of True and False were used, when building the inverse document frequency, setting this value of True down-weights the higher frequency words; default is True.
 
