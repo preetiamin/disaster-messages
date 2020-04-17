@@ -1,6 +1,3 @@
-# disaster-messages
-Categorize disaster messages from tweets
-
 ## Introduction
 A machine learning model was built to classify disaster tweets from a provided dataset. The tweets were categorized into 36 different categories, where each tweet could be categorized into multiple categories.
 
@@ -23,7 +20,7 @@ Grid Search was used to optimize the model. Four paramters were optimized using 
 
 ## Results
 
-The optimal parameters found using the grid search were max_df of 0.5, max_features 10,000 and n_gram_range of (1,2) for Count Vectorizer and use_idf=True for TF-IDF Transformer.
+The optimal parameters found using the grid search were max_df of 0.5, max_features 10,000 and n_gram_range of (1,2) for Count Vectorizer and use_idf=True for TF-IDF Transformer. Another run using max_features of 5,000 was performed which showed similar performance, hence 5,000 was used for the model.
 
 Below is the classifiction report for the model:
 
@@ -281,7 +278,12 @@ direct_report              precision    recall  f1-score   support
 avg / total       0.83      0.84      0.82      5244
 
 ## Conclusion
-Overall, RandomForestClassifier model worked well for this dataset with some limitations. Some categories did not have enough data to train the model well; further work into balancing the dataset might be helpful in boosting the accuracy of the model. AdaBoostClassifier was also tested as another model but performed only slightly better than RandomForestClassifier. Further work on assigning importance to categories might also be helpful. For example, detecting an earthquake accurately may be of much more importance than detecting category of tools. Categories could also be refined further as it's difficult to comprehend from the dataset what related, other_weather etc. are supposed to mean. But overall, the model perfomed fairly well in detecting various categories for the messages.
+Overall, RandomForestClassifier model worked well for this dataset with some limitations. AdaBoostClassifier was also tested as another model but performed only slightly better than RandomForestClassifier. 
+
+Some categories did not have enough data to train the model well; further work into balancing the dataset might be helpful in boosting the accuracy of the model. Further work on assigning importance to categories might also be helpful. For example, detecting an earthquake accurately may be of much more importance than detecting category of tools. 
+
+Categories could also be refined further as it's difficult to comprehend from the dataset what related, other_weather etc. are supposed to mean. But overall, the model perfomed fairly well in detecting various categories for the messages.
 
 ## Acknowledgements
 
+https://www.udacity.com/
