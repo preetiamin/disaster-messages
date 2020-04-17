@@ -5,6 +5,8 @@ A machine learning model was built to classify disaster tweets from a provided d
 The project was completed as part of Udacity's Data Scientist nanodegree program. The purpose of the project was to gain understanding in natural language processing using a pipeline and grid search.
 
 ## Methods Used
+
+
 #### Customer Tokenizer
 A custom tokenizer function was written to tokenize the text. This function removes all hyperlinks, numbers and alphanumeric strings as well as all punctuation. It also normalizes the text to lowercase. It then tokenizes the text and tags it with parts of speech which are used to lemmatize the text.
 
