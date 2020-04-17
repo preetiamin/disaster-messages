@@ -4,8 +4,20 @@ A machine learning model was built to classify disaster tweets from a provided d
 ## Project Motivation
 The project was completed as part of Udacity's Data Scientist nanodegree program. The purpose of the project was to gain understanding in natural language processing using a pipeline and grid search.
 
-## Methods Used
+## Files
 
+- run.py: python/flask script to run the webpage hosting the model
+- master.html: main file with the html code for the webpage
+- go.html: additional html code to replace webpage after searching
+- disaster_messages.csv - csv file containing the disaster messages
+- disaster_categories.csv - csv file containing the message category labels
+- process_data.py: python script to clean and merge the csv file and create a sqlite database with the data
+- DisasterResponse.db: Database created with the process_data.py script
+- train_classifier.py: python script to train the model using data from the database and save results in a pickle file
+- classifier.pkl: pickle file created by tran_classifier.py containing the model
+
+
+## Methods Used
 
 #### Customer Tokenizer
 A custom tokenizer function was written to tokenize the text. This function removes all hyperlinks, numbers and alphanumeric strings as well as all punctuation. It also normalizes the text to lowercase. It then tokenizes the text and tags it with parts of speech which are used to lemmatize the text.
