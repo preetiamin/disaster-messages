@@ -14,8 +14,26 @@ The project was completed as part of Udacity's Data Scientist nanodegree program
 - process_data.py: python script to clean and merge the csv file and create a sqlite database with the data
 - DisasterResponse.db: Database created with the process_data.py script
 - train_classifier.py: python script to train the model using data from the database and save results in a pickle file
-- classifier.pkl: pickle file created by tran_classifier.py containing the model
+- classifier.pkl: pickle file created by tran_classifier.py containing the model (removed due to size restrictions)
 
+## Instructions for running the scripts (via Udacity):
+1. Run the following commands in the project's root directory to set up your database and model.
+
+    - To run ETL pipeline that cleans data and stores in database
+        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+    - To run ML pipeline that trains classifier and saves
+        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+
+2. Run the following command in the app's directory to run your web app.
+    `python run.py`
+
+3. Go to http://0.0.0.0:3001/
+
+## Data Overview
+
+The database contains ~26,000 messages that have been labelled into 36 categories. Below is a histogram of how many messages were categorized into each category.
+
+![Test Image 1](templates/Cat_Hist.png)
 
 ## Methods Used
 
